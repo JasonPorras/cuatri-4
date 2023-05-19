@@ -13,14 +13,17 @@
       <img class="img-men" src="./imagen/dad.jpeg" alt="men" />
     </div>
 
-    <div id="caja" class="center-content">
+    <div class="containerColor">
       <p id="jokes"></p>
       <button id="randomButton" class="style-btn">Get another joke!</button>
     </div>
 
-    <div class="center-content">
-      <input type="text" />
-      <button class="style-btn">Search</button>
+    <div class="containerColor">
+      <div class="inputFlex">
+        <input id="inputSearch" type="text" class="inputStyle"/>
+        <button id="btnSearch" class="style-btn">Search</button>
+      </div>
+      <div id="listJoke"></div>
     </div>
 
     <script src="./api.js"></script>
