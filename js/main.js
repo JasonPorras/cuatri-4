@@ -1,12 +1,6 @@
-import { jokeRandom } from "./jokeRandom.js";
+import { jokeRandom  } from "./jokeRandom.js";
 import { jokeSearch } from "./jokeSearch.js";
 
-export const api = "https://icanhazdadjoke.com/";
-export const config = {
-headers: {
-    Accept: "application/json",
-},
-};
 
 //we select the IDs of the DOM
 const btnSearch = document.getElementById("btnSearch");

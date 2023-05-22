@@ -1,7 +1,6 @@
-import { api } from "./api.js";
-import { config } from "./api.js";
+import { api, config } from "./jokeRandom.js";
 
-let lastValue = "";
+let lastValue;
 
 export function jokeSearch() {
   const listJoke = document.getElementById("listJoke");
@@ -9,8 +8,9 @@ export function jokeSearch() {
   const value = input.value;
 
   if (value === "") {
-    alert("Input no puede estar vacio.");
-    listJoke.innerHTML = "";
+    listJoke.className = "styleList";
+    listJoke.innerHTML = "<li>Input cannot be empty!</li>";
+    lastValue = "";
   } else if (value !== lastValue) {
     fetch(api + "search?term=" + value, config)
       .then((response) => response.json())
@@ -22,10 +22,11 @@ export function jokeSearch() {
         if (results.length > 0) {
           results.forEach((result) => {
             listJoke.innerHTML += `<li>${result.joke}</li>`;
-            listJoke.className = "time";
+            listJoke.className = "styleList";
           });
         } else {
-          listJoke.innerHTML = "<li>No hubo resultados</li>";
+          listJoke.className = "styleList";
+          listJoke.innerHTML = "<li>No results</li>";
         }
 
         lastValue = value;
@@ -35,4 +36,3 @@ export function jokeSearch() {
       });
   }
 }
-
