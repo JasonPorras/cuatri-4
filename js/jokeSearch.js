@@ -4,11 +4,11 @@ let lastValue;
 
 export function jokeSearch() {
   const listJoke = document.getElementById("listJoke");
+  listJoke.className = "styleList";
   const input = document.getElementById("inputSearch");
   const value = input.value;
 
   if (value === "") {
-    listJoke.className = "styleList";
     listJoke.innerHTML = "<li>Input cannot be empty!</li>";
     lastValue = "";
   } else if (value !== lastValue) {
@@ -22,10 +22,8 @@ export function jokeSearch() {
         if (results.length > 0) {
           results.forEach((result) => {
             listJoke.innerHTML += `<li>${result.joke}</li>`;
-            listJoke.className = "styleList";
           });
         } else {
-          listJoke.className = "styleList";
           listJoke.innerHTML = "<li>No results</li>";
         }
 
