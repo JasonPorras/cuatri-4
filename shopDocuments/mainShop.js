@@ -1,9 +1,9 @@
-import { jokeRandom  } from "./printRandomJoke.js";
-import { jokeSearch } from "./printSearchJoke.js";
-import { createdElementsRandomJoke } from "./createdRandomJoke.js";
-
+import { createdElementsRandomJoke } from "../js/createdRandomJoke.js";
+import { jokeRandom } from "../js/printRandomJoke.js";
 
 createdElementsRandomJoke();
+jokeRandom();
+
 
 //we select the IDs of the DOM
 const btnSearch = document.getElementById("btnSearch");
@@ -17,3 +17,4 @@ btnSearch.addEventListener("click", jokeSearch);
 if (jokes.innerHTML === "") {
 jokeRandom();
 }
+
