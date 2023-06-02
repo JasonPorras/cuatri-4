@@ -1,4 +1,4 @@
-import { fetchSearchJoke } from "./apiConection.js";
+import { fetchSearchJoke } from "../apiConection/apiConection.js";
 
 let lastValue;
 

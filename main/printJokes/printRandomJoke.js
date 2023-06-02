@@ -1,4 +1,4 @@
-import  {fetchRandomJoke}  from "./apiConection.js";
+import  {fetchRandomJoke}  from "../apiConection/apiConection.js";
 
 //this funtion is for print random jokes.
 export function jokeRandom() {
