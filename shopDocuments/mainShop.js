@@ -1,11 +1,9 @@
-import { jokeRandom  } from "./printJokes/printRandomJoke.js";
-import { jokeSearch } from "./printJokes/printSearchJoke.js";
-import { createdElementsRandomJoke } from "./creatorElementsJokes/createdRandomJoke.js";
-import { createdElementsSearchJoke } from "./creatorElementsJokes/createdSearchJoke.js";
-
+import { createdElementsRandomJoke } from "../js/createdRandomJoke.js";
+import { jokeRandom } from "../js/printRandomJoke.js";
 
 createdElementsRandomJoke();
-createdElementsSearchJoke();
+jokeRandom();
+
 
 //we select the IDs of the DOM
 const btnSearch = document.getElementById("btnSearch");
@@ -19,3 +17,4 @@ btnSearch.addEventListener("click", jokeSearch);
 if (jokes.innerHTML === "") {
 jokeRandom();
 }
+

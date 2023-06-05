@@ -76,11 +76,6 @@ li {
   padding-top: 20px;
 }
 
-.styleList>li>a{
-  color:black;
-  text-decoration: none;
-}
-
 .style-btn {
   background-color: white;
   border-radius: 10px;
