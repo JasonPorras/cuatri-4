@@ -1,4 +1,4 @@
-import { fetchSearchJoke } from "../apiConection/apiConection.js";
+import { fetchSearchJoke } from "./apiConection/apiConection.js";
 
 let lastValue;
 
@@ -26,7 +26,7 @@ function updateJokeList(results) {
 
   if (results.length > 0) {
     results.forEach((result) => {
-      listJoke.innerHTML += `<li><a href="./shopDocuments/shop.html">${result.joke}</a></li>`;
+      listJoke.innerHTML += `<li><a href="./shopDocuments/shop.html?id=${result.id}">${result.joke}</a></li>`;
     });
   } else {
     showErrorMessage("No results.");
