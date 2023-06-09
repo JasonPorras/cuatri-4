@@ -5,8 +5,8 @@ export function jokeRandom() {
 
   fetchRandomJoke()
   
-    .then((information) => {
+    .then((joke) => {
       const jokes = document.getElementById("jokes");
-      jokes.innerHTML = `<a href="./shopDocuments/shop.html?id=${information.id}">${information.joke}</a>`;
+      jokes.innerHTML = `<a href="./shopDocuments/shop.html">${joke}</a>`;
     });
 }
