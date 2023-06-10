@@ -13,3 +13,10 @@ export async function printRandomJokeById() {
   randomButton.addEventListener("click", changeLabelJoke);
 }
 
+export async function prueba(){
+  const id = new URLSearchParams(window.location.search).get("id");
+  const joke = await getJokeById(id);
+ const jokeProduct = document.getElementById("jokeProduct")
+ console.log(jokeProduct);
+jokeProduct.textContent = `${joke.joke}`
+}

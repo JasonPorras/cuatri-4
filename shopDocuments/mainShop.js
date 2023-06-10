@@ -1,6 +1,6 @@
-import { printRandomJokeById  } from "./printRandomJokeProduct.js";
+import { printRandomJokeById, prueba  } from "./printRandomJokeProduct.js";
 
 
 printRandomJokeById();
-
+prueba()
 
