@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css" />
-    <title>On-line shop</title>
-</head>
-<body>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css" />
+  <title>On-line shop</title>
+</head>
+
+<body>
+  <section class="setting-content">
+    <div>
+      <div>
+        <img class="setting-img" src="/shopDocuments/imagesShop/product-shirt-black.jpg" alt="product-shirt-black">
+      </div>
+      <div class="center-content">
+        <label>
+          <input class="setting-radio-black" type="radio" name="product" value="black">
+        </label>
+        <label>
+          <input class="setting-radio-white" type="radio" name="product" value="white">
+        </label>
+      </div>
+    </div>
+
+    <div class="setting-joke-random">
+      <div>
+        <h1 class="title-product">hola</h1>
+        <p class="price-product">$25</p>
+        <p><span class="joke-bold">Joke:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, tempora.</p>
+      </div>
+      <div class="containerColor">
+        <h2 class="setting-title">Choose another joke!</h2>
+        <div id="jokes"></div>
+        <button id="randomButton" class="style-btn">Get another joke!</button>
+      </div>
+    </div>
+
+  </section>
 </body>
 <script type="module" src="/shopDocuments/mainShop.js"></script>
+
 </html>

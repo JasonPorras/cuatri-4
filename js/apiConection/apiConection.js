@@ -32,8 +32,6 @@ export async function getJokeById(id) {
     .catch(catchError);
 }
 
-
-
 //this funtion is for error in catch.
 function catchError(error) {
   errorMessage("Error: " + error);

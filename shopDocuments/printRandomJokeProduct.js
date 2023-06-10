@@ -1,5 +1,5 @@
 import { getJokeById } from "/js/apiConection/apiConection.js";
-import { jokeRandom } from "/js/printJokes/printRandomJoke.js";
+import { changeLabelJoke } from "/js/printJokes/printRandomJoke.js";
 
 // Función para obtener un chiste aleatorio y mostrarlo
 export async function printRandomJokeById() {
@@ -10,5 +10,5 @@ export async function printRandomJokeById() {
   jokes.innerHTML = `<p>${joke.joke}</p>`;
 
   const randomButton = document.getElementById("randomButton");
-  randomButton.addEventListener("click", jokeRandom);
+  randomButton.addEventListener("click", changeLabelJoke);
 }
