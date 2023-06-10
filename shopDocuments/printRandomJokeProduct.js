@@ -12,3 +12,4 @@ export async function printRandomJokeById() {
   const randomButton = document.getElementById("randomButton");
   randomButton.addEventListener("click", changeLabelJoke);
 }
+
